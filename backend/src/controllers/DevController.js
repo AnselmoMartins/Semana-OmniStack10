@@ -1,5 +1,6 @@
 const axios = require('axios');
 const mongoose = require('mongoose');
+const ParseStringAsArray = require('../utils/parseStringAsArray')
 const inst = axios.create({
     proxy: {
       host: '192.168.0.254',
