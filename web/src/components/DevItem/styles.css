@@ -1,0 +1,98 @@
+li.dev-item{
+    background: #fff;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    height: 250px;
+
+}
+
+li.dev-item header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+}
+
+
+li.dev-item header img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+li.dev-item header .user-info{
+    margin-left: 10px;
+}
+
+.user-info strong {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-info span{
+    font-size: 13px;
+    color: #999;
+    margin-top: 2px;
+}
+
+li.dev-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 10px 0;
+    height: 80px;
+    overflow-y: auto;
+}
+
+
+li.dev-item a {
+    color: #8e4dff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+li.dev-item  a:hover{
+    color: #5a2ea6;
+}
+
+li.dev-item footer{
+    height: 100px;
+}
+.x-button{
+    width: 50%;
+    background: rgb(216, 17, 17);
+    border-radius: 4px;
+    padding: 10px 10px;;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.x-button{
+    width: 50%;
+    background: rgba(43, 172, 36, 0.753);
+    border-radius: 4px;
+    padding: 10px 10px;;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+.x-button-x{
+    width: 50%;
+    background: rgb(247, 109, 109);
+    border-radius: 4px;
+    padding: 10px 10px;;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.x-button-header{
+    margin-top: 30px;
+    margin-bottom: 0px;
+}

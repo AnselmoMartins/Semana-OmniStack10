@@ -24,5 +24,7 @@ module.exports = {
         });
 
         return response.json({devs});
-    }
+    },
+
+ 
 }

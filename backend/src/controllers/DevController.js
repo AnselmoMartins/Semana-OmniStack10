@@ -46,6 +46,13 @@ module.exports = {
        console.log(request.params);
        const dev = await Dev.findByIdAndDelete({_id: new mongoose.mongo.ObjectID(request.params.id)});
        response.json(dev);
-   }
-    
+   },
+
+    async updateDev(request, response){
+        const {github_username} = request.body;
+        const apiResponse = await inst.get(`https://api.github.com/users/${github_username}`);
+        const { name = login, avatar_url, bio } = apiResponse.data;
+        const dev = await Dev.findOneAndUpdate({github_username}, {name, avatar_url, bio})
+        return response.json({dev});
+    }
 }
